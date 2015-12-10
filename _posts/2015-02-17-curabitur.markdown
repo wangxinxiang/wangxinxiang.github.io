@@ -6,7 +6,7 @@ categories: update
 ---
 <img src="/images/fulls/03.jpg" class="fit image"> 
 ## 1.client和服务器端交互 ##
-![](http://note.youdao.com/share/?id=28272f1e297b0db714e8db8377ea98e8&type=note)
+![](http://note.youdao.com/yws/public/resource/28272f1e297b0db714e8db8377ea98e8/9E84F9C357F84BB283DB08D580364E3D)
 
 ## 2，json的定义和原理 ##
 SON 语法是 JavaScript 对象表示语法的子集。
@@ -23,23 +23,23 @@ SON 语法是 JavaScript 对象表示语法的子集。
 adapter的底端刷新：[http://bbs.9ria.com/thread-237384-1-1.html](http://bbs.9ria.com/thread-237384-1-1.html)
 
 ## 5，active生命周期： ##
-![](http://note.youdao.com/share/?id=28272f1e297b0db714e8db8377ea98e8&type=note)
+![](http://note.youdao.com/yws/public/resource/28272f1e297b0db714e8db8377ea98e8/68982F81F14846F09B4F15F761B32290)
 
 ## 6,获得  LayoutInflater 实例的三种方式 ##
-[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)</br>
-<b> 1. </b>
-`LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`</br>
- **2. **
-    LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);</br>
-** 3.  **
+[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)
+> 1. 
+`LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`
+> 2
+    LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);  
+> 3. 
 `LayoutInflater inflater = LayoutInflater.from(context);`  
-<b>结论：</b>
-所以这三种方式最终本质是都是调用的Context.getSystemService()。
-**注意：**
-**·inflate方法与  findViewById 方法不同；**
-**·inflater  是用来找 res/layout下的 xml 布局文件，并且实例化；**
-**·findViewById()  是找具体 xml 布局文件中的具体 widget 控件**
+* 结论：
+>所以这三种方式最终本质是都是调用的Context.getSystemService()。
 
+* 注意：
+>·inflate方法与  findViewById 方法不同；
+>·inflater  是用来找 res/layout下的 xml 布局文件，并且实例化；
+>·findViewById()  是找具体 xml 布局文件中的具体 widget 控件
 (如:Button、TextView 等)。
 setContentView()一旦调用, layout就会立刻显示UI；而inflate只会把Layout形成一个以view类实现成的对象，有需要时再用setContentView(view)显示出来。
 
