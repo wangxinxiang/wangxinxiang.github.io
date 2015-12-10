@@ -26,13 +26,11 @@ adapter的底端刷新：[http://bbs.9ria.com/thread-237384-1-1.html](http://bbs
 ![](http://note.youdao.com/yws/public/resource/28272f1e297b0db714e8db8377ea98e8/68982F81F14846F09B4F15F761B32290)
 
 ## 6,获得  LayoutInflater 实例的三种方式 ##
-[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)
-> 1 
-`LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`
-> 2
-    LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);  
-> 3 
-`LayoutInflater inflater = LayoutInflater.from(context);`  
+[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)  
+
+> 1 `LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`
+> 2 LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);  
+> 3 `LayoutInflater inflater = LayoutInflater.from(context);`  
 * 结论：
 >所以这三种方式最终本质是都是调用的Context.getSystemService()。
 
