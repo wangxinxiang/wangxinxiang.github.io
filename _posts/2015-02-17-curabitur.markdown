@@ -26,14 +26,14 @@ adapter的底端刷新：[http://bbs.9ria.com/thread-237384-1-1.html](http://bbs
 ![](http://note.youdao.com/share/?id=28272f1e297b0db714e8db8377ea98e8&type=note)
 
 ## 6,获得  LayoutInflater 实例的三种方式 ##
-[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)
-** 1. **
-`LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`
+[http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html](http://www.cnblogs.com/devinzhang/archive/2011/12/31/2308812.html)</br>
+<b> 1. </b>
+`LayoutInflater inflater = getLayoutInflater();  //调用Activity的getLayoutInflater()`</br>
  **2. **
-    LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);
+    LayoutInflater localinflater =(LayoutInflater)context.getSystemService (Context.LAYOUT_INFLATER_SERVICE);</br>
 ** 3.  **
 `LayoutInflater inflater = LayoutInflater.from(context);`  
-**结论：**
+<b>结论：</b>
 所以这三种方式最终本质是都是调用的Context.getSystemService()。
 **注意：**
 **·inflate方法与  findViewById 方法不同；**
@@ -49,15 +49,15 @@ setContentView()一旦调用, layout就会立刻显示UI；而inflate只会把La
 [http://mobile.51cto.com/abased-375428.htm](http://mobile.51cto.com/abased-375428.htm)
 [http://www.cnblogs.com/angeldevil/archive/2012/04/08/2437747.html](http://www.cnblogs.com/angeldevil/archive/2012/04/08/2437747.html)
 
-Layout_weight是用LinearLayout的宽度减去子容器的宽度和，再分配    
+>Layout_weight是用LinearLayout的宽度减去子容器的宽度和，再分配    
 `int share = (int) (childExtra * delta / weightSum);
 int childWidth = child.getMeasuredWidth() + share;`
 
 ## 8,选择器四种的使用状态 ##
-android:state_focused
-android:state_pressed
-android:state_selected
-android:state_enabled
+android:state_focused</br>
+android:state_pressed</br>
+android:state_selected</br>
+android:state_enabled</br>
 
 ## 9.广播机制 ##
 http://www.cnblogs.com/lwbqqyumidi/p/4168017.html
