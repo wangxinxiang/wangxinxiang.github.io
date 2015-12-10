@@ -5,6 +5,7 @@ date: 2015-12-10T16:40:44.000Z
 categories: update
 ---
 <img src="/images/fulls/03.jpg" class="fit image"> 
+
 ## 1.client和服务器端交互 ##
 ![](http://note.youdao.com/yws/public/resource/28272f1e297b0db714e8db8377ea98e8/9E84F9C357F84BB283DB08D580364E3D)
 
@@ -34,7 +35,7 @@ adapter的底端刷新：[http://bbs.9ria.com/thread-237384-1-1.html](http://bbs
 * 结论：
 >所以这三种方式最终本质是都是调用的Context.getSystemService()。
 
-* 注意：
+* 注意：  
 >·inflate方法与  findViewById 方法不同;  
 ·inflater  是用来找 res/layout下的 xml 布局文件，并且实例化；  
 ·findViewById()  是找具体 xml 布局文件中的具体 widget 控件
@@ -52,10 +53,10 @@ setContentView()一旦调用, layout就会立刻显示UI；而inflate只会把La
 int childWidth = child.getMeasuredWidth() + share;`
 
 ## 8,选择器四种的使用状态 ##
-android:state_focused</br>
-android:state_pressed</br>
-android:state_selected</br>
-android:state_enabled</br>
+android:state_focused  
+android:state_pressed  
+android:state_selected  
+android:state_enabled  
 
 ## 9.广播机制 ##
 http://www.cnblogs.com/lwbqqyumidi/p/4168017.html
